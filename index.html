@@ -1,0 +1,614 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Robert Taboada's Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<div class="aurora">
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+  <div class="aurora-line"></div>
+</div>
+
+  <div class="nav">
+    <div class="container inner">
+      <a class="brand" href="#home"><span class="dot"></span>Robert Taboada</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </div>
+    <div class="nav-overlay"></div>
+  </div>
+
+  <div class="container">
+
+    <!-- ==================== HOME SECTION ==================== -->
+    <section id="home" class="hero centered">
+      <div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>"Let the stars guide you to me"</p>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section>
+      <div class="section-title">Featured Projects</div>
+
+      <!-- Natecks / Bakery System -->
+      <div class="project-showcase">
+        <div class="project-header">
+          <h2 class="project-name">Bakery Management & Inventory System</h2>
+          <span class="project-badge in-dev">In Development</span>
+        </div>
+        <p class="project-desc">A full-stack bakery management and inventory system built with Django REST and React Native (Expo). Features admin dashboard, mobile app for staff, and real-time inventory tracking.</p>
+        <div class="project-gallery">
+          <div class="gallery-item">
+            <img src="Natecks Web Login.png" alt="Natecks Web Login"/>
+            <span class="gallery-label">Web Dashboard</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Natecks App Login.png" alt="Natecks App Login"/>
+            <span class="gallery-label">Mobile App</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Admin Preparation.png" alt="Admin Preparation"/>
+            <span class="gallery-label">Admin Panel</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Tindera Goods Preparation.png" alt="Tindera Goods"/>
+            <span class="gallery-label">Inventory Management</span>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Django REST</span>
+          <span class="tech-tag">React Native</span>
+          <span class="tech-tag">Expo</span>
+          <span class="tech-tag">MySQL</span>
+        </div>
+      </div>
+
+      <!-- Binary Tree Visual Novel -->
+      <div class="project-showcase" style="margin-top: 24px;">
+        <div class="project-header">
+          <h2 class="project-name">Binary Tree Visual Novel</h2>
+          <span class="project-badge">Completed</span>
+        </div>
+        <p class="project-desc">An educational visual novel game teaching binary tree data structures and Object-Oriented Programming concepts through interactive storytelling and boss battles.</p>
+        <div class="project-gallery">
+          <div class="gallery-item">
+            <img src="VN Main Menu.png" alt="VN Main Menu"/>
+            <span class="gallery-label">Main Menu</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Boss Battle 1.png" alt="Boss Battle 1"/>
+            <span class="gallery-label">Boss Battle</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Boss Battle 2.png" alt="Boss Battle 2"/>
+            <span class="gallery-label">Combat System</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Timer.png" alt="Timer Feature"/>
+            <span class="gallery-label">Timer Feature</span>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Ren'Py</span>
+          <span class="tech-tag">Python</span>
+        </div>
+      </div>
+
+      <!-- Gimme 5 -->
+      <div class="project-showcase" style="margin-top: 24px;">
+        <div class="project-header">
+          <h2 class="project-name">Gimme 5</h2>
+          <span class="project-badge">Completed</span>
+        </div>
+        <p class="project-desc">An interactive trivia web game featuring a scoring system, timer functionality, and engaging gameplay mechanics.</p>
+        <div class="project-gallery">
+          <div class="gallery-item">
+            <img src="Gimme 5(2).jpg" alt="Gimme 5 Main Menu"/>
+            <span class="gallery-label">Main Menu</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Gimme 5(3).jpg" alt="Gimme 5 Gameplay"/>
+            <span class="gallery-label">Game Controls</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Gimme 5.jpg" alt="Gimme 5 Questions"/>
+            <span class="gallery-label">Gameplay</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Gimme 5(4).jpg" alt="Gimme 5 Results"/>
+            <span class="gallery-label">Results</span>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="page-section">
+      <h1>About Me</h1>
+
+      <div class="about-card">
+        <h2>Hello! I'm Robert Taboada</h2>
+        <p class="about-intro">A passionate Full Stack Developer specializing in game development, web applications, and mobile apps. I love creating intuitive user experiences and building projects that make a difference.</p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-value">6+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Major Projects</div>
+          </div>
+        </div>
+
+        <div class="about-section">
+          <h3>What I Do</h3>
+          <div class="about-grid-new">
+            <div class="about-item">
+              <div class="about-icon">🎮</div>
+              <div class="about-text">
+                <h4>Game Development</h4>
+                <p>Visual novels with Ren'Py, game mechanics with Godot, and interactive experiences.</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">🌐</div>
+              <div class="about-text">
+                <h4>Web Development</h4>
+                <p>Full-stack applications using Django REST, React, and modern web technologies.</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">📱</div>
+              <div class="about-text">
+                <h4>Mobile Development</h4>
+                <p>Cross-platform mobile apps with React Native and Expo.</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">✨</div>
+              <div class="about-text">
+                <h4>UI/UX Design</h4>
+                <p>User-friendly interfaces with focus on storage optimization and mobile experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-section">
+          <h3>Projects & Technologies</h3>
+          <div class="project-tech-list">
+            <div class="tech-project-item">
+              <h4>Bakery Management & Inventory System</h4>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django REST</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">API Data Sanitization</span>
+              </div>
+            </div>
+            <div class="tech-project-item">
+              <h4>Binary Tree Visual Novel</h4>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Ren'Py</span>
+                <span class="tech-tag">Regex-Based Troubleshooting</span>
+              </div>
+            </div>
+            <div class="tech-project-item">
+              <h4>Other Projects</h4>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="page-section">
+      <h1>Experience</h1>
+
+      <!-- Training Experience -->
+      <div class="card" style="margin-bottom: 16px;">
+        <h2 class="section-title" style="margin-top:0">Training Experience</h2>
+        <div class="experience-item">
+          <div class="exp-header">
+            <h3>Freelance Full Stack Game Developer</h3>
+            <span class="exp-date">September 2022 - Present</span>
+          </div>
+          <ul class="exp-list">
+            <li>Developed visual novel–style games for various international clients, working both independently and as part of a team.</li>
+            <li>Designed intuitive user interfaces and analyzed player interaction data to improve game flow and engagement.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Leadership -->
+      <div class="card" style="margin-bottom: 0;">
+        <h2 class="section-title" style="margin-top:0">Leadership</h2>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <h3>4th Year Representative</h3>
+            <span class="exp-date">September 2024 - June 2025</span>
+          </div>
+          <p class="exp-org">Supreme Student Government (SSG), Cebu Technological University – Ginatilan Campus</p>
+          <ul class="exp-list">
+            <li>Assisted in student engagement, events, and organizational tasks.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <h3>Secretary</h3>
+            <span class="exp-date">September 2023 - June 2024</span>
+          </div>
+          <p class="exp-org">Supreme Student Government (SSG), Cebu Technological University – Ginatilan Campus</p>
+          <ul class="exp-list">
+            <li>Kept accurate records of the minutes and provided immediate documentation and reports in every implemented project.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="page-section">
+      <h1>Technical Skills</h1>
+
+      <!-- Skill Constellation -->
+      <div class="skills-constellation">
+
+        <!-- Languages - Main orbiting cards -->
+        <div class="skill-orbit">
+          <div class="orbit-label">Languages</div>
+          <div class="orbit-items">
+            <div class="skill-planet" data-level="90">
+              <div class="planet-icon">Py</div>
+              <div class="planet-name">Python</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet" data-level="85">
+              <div class="planet-icon">TS</div>
+              <div class="planet-name">TypeScript</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet" data-level="85">
+              <div class="planet-icon">JS</div>
+              <div class="planet-name">JavaScript</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet" data-level="90">
+              <div class="planet-icon">&lt;/&gt;</div>
+              <div class="planet-name">HTML</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet" data-level="85">
+              <div class="planet-icon">#</div>
+              <div class="planet-name">CSS</div>
+              <div class="planet-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-orbit">
+          <div class="orbit-label">Frameworks & Libraries</div>
+          <div class="orbit-items">
+            <div class="skill-planet framework" data-level="80">
+              <div class="planet-icon">Dj</div>
+              <div class="planet-name">Django REST</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet framework" data-level="75">
+              <div class="planet-icon">RN</div>
+              <div class="planet-name">React Native</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet framework" data-level="70">
+              <div class="planet-icon">Fl</div>
+              <div class="planet-name">Flutter</div>
+              <div class="planet-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-orbit">
+          <div class="orbit-label">Databases</div>
+          <div class="orbit-items">
+            <div class="skill-planet database" data-level="75">
+              <div class="planet-icon">Mg</div>
+              <div class="planet-name">MongoDB</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet database" data-level="80">
+              <div class="planet-icon">My</div>
+              <div class="planet-name">MySQL</div>
+              <div class="planet-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-orbit">
+          <div class="orbit-label">Tools & Platforms</div>
+          <div class="orbit-items">
+            <div class="skill-planet tool" data-level="85">
+              <div class="planet-icon">Git</div>
+              <div class="planet-name">Git/GitHub</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet tool" data-level="70">
+              <div class="planet-icon">Dk</div>
+              <div class="planet-name">Docker</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet tool" data-level="80">
+              <div class="planet-icon">Ex</div>
+              <div class="planet-name">Expo</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet tool" data-level="90">
+              <div class="planet-icon">VS</div>
+              <div class="planet-name">VS Code</div>
+              <div class="planet-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Technical Skills -->
+        <div class="skill-orbit">
+          <div class="orbit-label">Other Technical Skills</div>
+          <div class="orbit-items">
+            <div class="skill-planet other" data-level="80">
+              <div class="planet-icon">UX</div>
+              <div class="planet-name">UX Design</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet other" data-level="75">
+              <div class="planet-icon">API</div>
+              <div class="planet-name">API Sanitization</div>
+              <div class="planet-glow"></div>
+            </div>
+            <div class="skill-planet other" data-level="75">
+              <div class="planet-icon">.*</div>
+              <div class="planet-name">Regex</div>
+              <div class="planet-glow"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Soft Skills Section -->
+      <div class="card soft-skills-card">
+        <h2 class="section-title" style="margin-top:0">Soft Skills</h2>
+        <div class="soft-skills-grid">
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon">++</div>
+            <div class="soft-skill-text">
+              <h4>Adaptable</h4>
+              <p>Quick learner, flexible with new technologies</p>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon">&lt;&gt;</div>
+            <div class="soft-skill-text">
+              <h4>Collaborative</h4>
+              <p>Team player who thrives in group environments</p>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon">?!</div>
+            <div class="soft-skill-text">
+              <h4>Inquisitive</h4>
+              <p>Curious mindset, always eager to learn more</p>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon">&hearts;</div>
+            <div class="soft-skill-text">
+              <h4>Empathy</h4>
+              <p>Understanding user needs and team perspectives</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-contact">
+        <h3>Connect With Me</h3>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/robert-taboada-89493336b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/robert.taboada.986/" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://github.com/BlissfulRobert" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 created by Robert Taboada</p>
+    </div>
+  </div>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged view"/>
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<script>
+  // Get all zoomable images
+  document.querySelectorAll('.gallery-item img, .project-card-media img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.onclick = function() {
+      openLightbox(this.src, this.alt);
+    };
+  });
+
+  function openLightbox(src, alt) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    lightboxImg.src = src;
+    lightboxCaption.textContent = alt;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Close on clicking outside image
+  document.getElementById('lightbox').onclick = function(e) {
+    if (e.target === this) {
+      closeLightbox();
+    }
+  };
+
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeLightbox();
+      closeMobileNav();
+    }
+  });
+
+  // Mobile Navigation Toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.links');
+  const navOverlay = document.querySelector('.nav-overlay');
+
+  function closeMobileNav() {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  navToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  });
+
+  navOverlay.addEventListener('click', closeMobileNav);
+
+  // Smooth scroll for anchor links + close mobile nav
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      closeMobileNav();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Update active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const allNavLinks = document.querySelectorAll('.links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    allNavLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+<div class="twinkle-stars">
+  <!-- Left side stars -->
+  <span style="top:10%; left:3%; animation-delay:0s"></span>
+  <span style="top:30%; left:5%; animation-delay:1s"></span>
+  <span style="top:70%; left:2%; animation-delay:2s"></span>
+  <span style="top:50%; left:6%; animation-delay:3.5s"></span>
+  <span style="top:85%; left:4%; animation-delay:4.2s"></span>
+
+  <!-- Right side stars -->
+  <span style="top:15%; right:3%; animation-delay:0.5s"></span>
+  <span style="top:45%; right:5%; animation-delay:1.5s"></span>
+  <span style="top:80%; right:2%; animation-delay:2.5s"></span>
+  <span style="top:25%; right:6%; animation-delay:3s"></span>
+  <span style="top:65%; right:4%; animation-delay:4s"></span>
+
+  <!-- Middle stars -->
+  <span style="top:20%; left:25%; animation-delay:0.8s"></span>
+  <span style="top:40%; left:35%; animation-delay:2.2s"></span>
+  <span style="top:60%; left:45%; animation-delay:1.3s"></span>
+  <span style="top:35%; left:55%; animation-delay:3.1s"></span>
+  <span style="top:75%; left:30%; animation-delay:0.3s"></span>
+  <span style="top:15%; left:60%; animation-delay:2.8s"></span>
+  <span style="top:55%; left:70%; animation-delay:1.7s"></span>
+  <span style="top:85%; left:50%; animation-delay:4.5s"></span>
+  <span style="top:25%; left:40%; animation-delay:3.8s"></span>
+  <span style="top:70%; left:65%; animation-delay:0.6s"></span>
+</div>
+
+</body>
+</html>
