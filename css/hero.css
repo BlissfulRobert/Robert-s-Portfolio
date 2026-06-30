@@ -209,6 +209,56 @@
   transform: scale(1.04);
 }
 
+/* ── Comic speech bubble ── */
+.avatar-bubble {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: #1a2540;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 2px solid rgba(110,168,255,0.55);
+  box-shadow: 0 0 14px rgba(110,168,255,0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 10;
+}
+
+/* Arrow pointing down toward the card */
+.avatar-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px 7px 0 7px;
+  border-style: solid;
+  border-color: rgba(110,168,255,0.55) transparent transparent transparent;
+}
+.avatar-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 7px 6px 0 6px;
+  border-style: solid;
+  border-color: #1a2540 transparent transparent transparent;
+  z-index: 1;
+}
+
+.hero-avatar-card:hover .avatar-bubble,
+.hero-avatar-card.bubble-show .avatar-bubble {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-16px);
+}
+
 .hero-avatar-glow {
   position: absolute;
   width: 200px;
