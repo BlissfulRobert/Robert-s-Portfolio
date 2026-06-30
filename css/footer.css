@@ -1,0 +1,23 @@
+/* === Footer === */
+.footer{padding:40px 0 24px;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,.08);margin-top:30px;margin-bottom:0}
+.footer-contact{margin-bottom:24px}
+.footer-contact h3{font-size:18px;font-weight:700;color:var(--text);margin:0 0 16px}
+.footer-copy{margin:0;font-size:14px}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.socials a {
+  color: var(--text);
+  font-size: 28px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  color: var(--accent);
+  transform: scale(1.15);
+}
