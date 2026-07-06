@@ -11,7 +11,8 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:hidden;}
+html{scroll-behavior:smooth;overflow-x:hidden;scrollbar-width:none;}
+html::-webkit-scrollbar{display:none;}
 html,body{margin:0;padding:0;overflow-x:hidden;color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
 body{background:linear-gradient(180deg,#0b0e1a 0%, #101632 50%, #0b0e1a 100%);background-attachment:fixed}
 
