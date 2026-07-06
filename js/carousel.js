@@ -12,16 +12,14 @@
     var idx   = 0;
 
     function show(n, dir) {
-      // dir: 1 = going forward (slide from right), -1 = going back (slide from left)
       cards[idx].classList.remove('active', 'slide-left');
       cards[idx].style.display = 'none';
 
       idx = (n + total) % total;
       var card = cards[idx];
       card.style.display = 'block';
-      // Remove then re-add animation class to retrigger
       card.classList.remove('active', 'slide-left');
-      void card.offsetWidth; // reflow
+      void card.offsetWidth;
       if (dir === -1) {
         card.classList.add('active', 'slide-left');
       } else {
@@ -37,12 +35,34 @@
   initSection('workSection',  'workPrev',  'workNext',  'workCurrent');
   initSection('otherSection', 'otherPrev', 'otherNext', 'otherCurrent');
 
-  // Lightbox for all gallery images
-  document.querySelectorAll('.gallery-item img').forEach(function (img) {
-    img.style.cursor = 'zoom-in';
-    img.addEventListener('click', function () {
-      if (typeof openLightbox === 'function') openLightbox(img.src, img.alt);
+  // ── Steam thumbnail → main image swap ────────────────────────────────────
+  document.querySelectorAll('.project-showcase').forEach(function (card) {
+    var mainImg     = card.querySelector('.steam-main-img img');
+    var mainCaption = card.querySelector('.steam-main-caption');
+    var thumbs      = Array.from(card.querySelectorAll('.steam-thumb'));
+
+    thumbs.forEach(function (thumb) {
+      thumb.addEventListener('click', function () {
+        var src   = thumb.getAttribute('data-src');
+        var label = thumb.getAttribute('data-label');
+
+        // Swap main image
+        mainImg.src = src;
+        mainImg.alt = label;
+        mainCaption.textContent = label;
+
+        // Update active thumb highlight
+        thumbs.forEach(function (t) { t.classList.remove('active-thumb'); });
+        thumb.classList.add('active-thumb');
+      });
     });
+
+    // Lightbox on main image click — pass the card so nav can use its thumb list
+    if (mainImg) {
+      mainImg.addEventListener('click', function () {
+        if (typeof openLightbox === 'function') openLightbox(mainImg.src, mainImg.alt, card);
+      });
+    }
   });
 })();
 
