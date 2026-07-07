@@ -55,8 +55,8 @@
   justify-content: center;
   gap: 8px;
   padding: 14px 12px;
-  background: rgba(30, 38, 60, 0.85);
-  border: 1px solid rgba(110,168,255,.15);
+  background: rgba(18, 24, 45, 0.9);
+  border: 1px solid rgba(110,168,255,.22);
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,10 +83,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
   border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.3), 0 0 12px rgba(110,168,255,.15);
+  box-shadow: 0 2px 8px rgba(0,0,0,.4), 0 0 14px rgba(110,168,255,.2);
   transition: all 0.3s ease;
 }
 
@@ -94,8 +94,8 @@
   font-size: 28px;
   line-height: 1;
   display: block;
-  filter: drop-shadow(0 0 4px currentColor);
-  opacity: 0.9;
+  filter: drop-shadow(0 0 5px currentColor);
+  opacity: 1;
 }
 
 .skill-planet:hover .planet-icon {
@@ -160,62 +160,62 @@
 
 /* Framework planets - purple tint */
 .skill-planet.framework {
-  border-color: rgba(170,117,255,.25);
+  border-color: rgba(170,117,255,.35);
 }
 .skill-planet.framework .planet-icon {
-  background: rgba(170,117,255,.12);
-  border-color: rgba(170,117,255,.2);
+  background: rgba(170,117,255,.22);
+  border-color: rgba(170,117,255,.35);
 }
 .skill-planet.framework:hover {
   border-color: #aa75ff;
   box-shadow:
     0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(170,117,255,.2);
+    0 0 30px rgba(170,117,255,.25);
 }
 
 /* Database planets - green tint */
 .skill-planet.database {
-  border-color: rgba(158,240,168,.25);
+  border-color: rgba(158,240,168,.35);
 }
 .skill-planet.database .planet-icon {
-  background: rgba(158,240,168,.1);
-  border-color: rgba(158,240,168,.2);
+  background: rgba(158,240,168,.18);
+  border-color: rgba(158,240,168,.35);
 }
 .skill-planet.database:hover {
   border-color: #9ef0a8;
   box-shadow:
     0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(158,240,168,.2);
+    0 0 30px rgba(158,240,168,.25);
 }
 
 /* Tool planets - orange/yellow tint */
 .skill-planet.tool {
-  border-color: rgba(255,180,100,.25);
+  border-color: rgba(255,180,100,.35);
 }
 .skill-planet.tool .planet-icon {
-  background: rgba(255,180,100,.1);
-  border-color: rgba(255,180,100,.2);
+  background: rgba(255,180,100,.18);
+  border-color: rgba(255,180,100,.35);
 }
 .skill-planet.tool:hover {
   border-color: #ffb464;
   box-shadow:
     0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(255,180,100,.2);
+    0 0 30px rgba(255,180,100,.25);
 }
 
 /* Other Technical Skills - cyan/teal tint */
 .skill-planet.other {
-  border-color: rgba(100,220,220,.25);
+  border-color: rgba(100,220,220,.35);
 }
 .skill-planet.other .planet-icon {
-  background: rgba(100,220,220,.1);
-  border-color: rgba(100,220,220,.2);
+  background: rgba(100,220,220,.18);
+  border-color: rgba(100,220,220,.35);
 }
 .skill-planet.other:hover {
   border-color: #64dcdc;
   box-shadow:
     0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(100,220,220,.2);
+    0 0 30px rgba(100,220,220,.25);
 }
 
 /* Soft Skills Card */
