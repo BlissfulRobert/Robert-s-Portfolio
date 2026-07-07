@@ -203,6 +203,27 @@
     0 0 30px rgba(255,180,100,.25);
 }
 
+/* Cloud & DevOps - indigo/violet tint */
+.skill-planet.devops {
+  border-color: rgba(192,132,252,.35);
+}
+.skill-planet.devops .planet-icon {
+  background: rgba(192,132,252,.18);
+  border-color: rgba(192,132,252,.35);
+}
+.skill-planet.devops:hover {
+  border-color: #c084fc;
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.3),
+    0 0 30px rgba(192,132,252,.25);
+}
+.skill-planet.devops .planet-icon {
+  box-shadow: 0 2px 8px rgba(0,0,0,.3), 0 0 12px rgba(192,132,252,.2);
+}
+.skill-planet.devops:hover .planet-icon {
+  box-shadow: 0 4px 16px rgba(0,0,0,.3), 0 0 20px rgba(192,132,252,.4);
+}
+
 /* Other Technical Skills - cyan/teal tint */
 .skill-planet.other {
   border-color: rgba(100,220,220,.35);
