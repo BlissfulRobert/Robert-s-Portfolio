@@ -43,7 +43,7 @@
 
 .orbit-items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 
@@ -54,13 +54,13 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 14px 12px;
+  padding: 14px 10px;
   background: rgba(18, 24, 45, 0.9);
   border: 1px solid rgba(110,168,255,.22);
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100px;
+  min-width: 0;
   aspect-ratio: 1 / 1;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .planet-name {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--text);
   text-align: center;
@@ -594,8 +594,9 @@
 
 @media (max-width: 600px) {
   .soft-skills-grid { grid-template-columns: 1fr; }
-  .skills-constellation { grid-template-columns: repeat(2, 1fr); }
+  .orbit-items { grid-template-columns: repeat(2, 1fr); }
   .skill-planet { padding: 12px 8px; }
-  .planet-icon { width: 44px; height: 28px; font-size: 11px; }
+  .planet-icon { width: 44px; height: 44px; }
+  .planet-icon i { font-size: 22px; }
   .planet-name { font-size: 10px; }
 }
