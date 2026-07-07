@@ -1,242 +1,96 @@
-/* === Skills - Planet/Constellation Theme === */
-.skills-constellation {
-  background: var(--card);
-  border: 1px solid rgba(255,255,255,.06);
-  border-radius: 20px;
-  padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+/* === Skills Grid - 3-col 2-row === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: stretch;
   margin-bottom: 24px;
 }
 
-.skill-orbit {
-  position: relative;
+.skill-card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.orbit-label {
-  font-size: 13px;
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
-.orbit-label::before {
-  content: "";
+.skill-card-dot {
+  display: inline-block;
   width: 8px;
   height: 8px;
-  background: var(--accent);
+  min-width: 8px;
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
 @keyframes pulse-glow {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.7; transform: scale(1.2); }
+  50% { opacity: 0.7; transform: scale(1.3); }
 }
 
-.orbit-items {
+.skill-card-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px;
+  align-content: start;
+  flex: 1;
 }
 
-.skill-planet {
-  position: relative;
+.skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 14px 10px;
-  background: rgba(18, 24, 45, 0.9);
-  border: 1px solid rgba(110,168,255,.22);
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 0;
-  aspect-ratio: 1 / 1;
+  gap: 6px;
 }
 
-.skill-planet:hover {
-  transform: translateY(-8px) scale(1.05);
-  border-color: var(--accent);
-  box-shadow:
-    0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(110,168,255,.2),
-    inset 0 0 20px rgba(110,168,255,.1);
-}
-
-.skill-planet:hover .planet-glow {
-  opacity: 1;
-}
-
-.planet-icon {
-  width: 56px;
-  height: 56px;
+.skill-icon {
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.4), 0 0 14px rgba(110,168,255,.2);
-  transition: all 0.3s ease;
+  border-radius: 50%;
+  border: 1px solid;
+  font-size: 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.planet-icon i {
-  font-size: 28px;
-  line-height: 1;
-  display: block;
-  filter: drop-shadow(0 0 5px currentColor);
-  opacity: 1;
+.skill-item:hover .skill-icon {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,.3);
 }
 
-.skill-planet:hover .planet-icon {
-  transform: rotate(10deg) scale(1.1);
-  background: rgba(255,255,255,.1);
-  box-shadow: 0 4px 16px rgba(0,0,0,.3), 0 0 20px rgba(110,168,255,.3);
-}
-
-.skill-planet:hover .planet-icon i {
-  filter: drop-shadow(0 0 6px currentColor);
-  opacity: 1;
-}
-
-.skill-planet.framework .planet-icon {
-  box-shadow: 0 2px 8px rgba(0,0,0,.3), 0 0 12px rgba(170,117,255,.18);
-}
-.skill-planet.framework:hover .planet-icon {
-  box-shadow: 0 4px 16px rgba(0,0,0,.3), 0 0 20px rgba(170,117,255,.35);
-}
-
-.skill-planet.database .planet-icon {
-  box-shadow: 0 2px 8px rgba(0,0,0,.3), 0 0 12px rgba(158,240,168,.18);
-}
-.skill-planet.database:hover .planet-icon {
-  box-shadow: 0 4px 16px rgba(0,0,0,.3), 0 0 20px rgba(158,240,168,.35);
-}
-
-.skill-planet.tool .planet-icon {
-  box-shadow: 0 2px 8px rgba(0,0,0,.3), 0 0 12px rgba(255,180,100,.18);
-}
-.skill-planet.tool:hover .planet-icon {
-  box-shadow: 0 4px 16px rgba(0,0,0,.3), 0 0 20px rgba(255,180,100,.35);
-}
-
-.skill-planet.other .planet-icon {
-  box-shadow: 0 2px 8px rgba(0,0,0,.3), 0 0 12px rgba(100,220,220,.18);
-}
-.skill-planet.other:hover .planet-icon {
-  box-shadow: 0 4px 16px rgba(0,0,0,.3), 0 0 20px rgba(100,220,220,.35);
-}
-
-.planet-name {
+.skill-label {
   font-size: 11px;
   font-weight: 600;
   color: var(--text);
   text-align: center;
-  white-space: nowrap;
+  line-height: 1.2;
+  opacity: 0.85;
 }
 
-.planet-glow {
-  position: absolute;
-  top: -20%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  background: radial-gradient(circle, rgba(110,168,255,.2) 0%, transparent 70%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  z-index: -1;
+@media (max-width: 860px) {
+  .skills-grid { grid-template-columns: 1fr 1fr; }
 }
 
-/* Framework planets - purple tint */
-.skill-planet.framework {
-  border-color: rgba(170,117,255,.35);
-}
-.skill-planet.framework .planet-icon {
-  background: rgba(170,117,255,.22);
-  border-color: rgba(170,117,255,.35);
-}
-.skill-planet.framework:hover {
-  border-color: #aa75ff;
-  box-shadow:
-    0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(170,117,255,.25);
-}
-
-/* Database planets - green tint */
-.skill-planet.database {
-  border-color: rgba(158,240,168,.35);
-}
-.skill-planet.database .planet-icon {
-  background: rgba(158,240,168,.18);
-  border-color: rgba(158,240,168,.35);
-}
-.skill-planet.database:hover {
-  border-color: #9ef0a8;
-  box-shadow:
-    0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(158,240,168,.25);
-}
-
-/* Tool planets - orange/yellow tint */
-.skill-planet.tool {
-  border-color: rgba(255,180,100,.35);
-}
-.skill-planet.tool .planet-icon {
-  background: rgba(255,180,100,.18);
-  border-color: rgba(255,180,100,.35);
-}
-.skill-planet.tool:hover {
-  border-color: #ffb464;
-  box-shadow:
-    0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(255,180,100,.25);
-}
-
-/* Cloud & DevOps - indigo/violet tint */
-.skill-planet.devops {
-  border-color: rgba(192,132,252,.35);
-}
-.skill-planet.devops .planet-icon {
-  background: rgba(192,132,252,.18);
-  border-color: rgba(192,132,252,.35);
-}
-.skill-planet.devops:hover {
-  border-color: #c084fc;
-  box-shadow:
-    0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(192,132,252,.25);
-}
-.skill-planet.devops .planet-icon {
-  box-shadow: 0 2px 8px rgba(0,0,0,.3), 0 0 12px rgba(192,132,252,.2);
-}
-.skill-planet.devops:hover .planet-icon {
-  box-shadow: 0 4px 16px rgba(0,0,0,.3), 0 0 20px rgba(192,132,252,.4);
-}
-
-/* Other Technical Skills - cyan/teal tint */
-.skill-planet.other {
-  border-color: rgba(100,220,220,.35);
-}
-.skill-planet.other .planet-icon {
-  background: rgba(100,220,220,.18);
-  border-color: rgba(100,220,220,.35);
-}
-.skill-planet.other:hover {
-  border-color: #64dcdc;
-  box-shadow:
-    0 20px 40px rgba(0,0,0,.3),
-    0 0 30px rgba(100,220,220,.25);
+@media (max-width: 540px) {
+  .skills-grid { grid-template-columns: 1fr; }
 }
 
 /* Soft Skills Card */
@@ -594,9 +448,8 @@
 
 @media (max-width: 600px) {
   .soft-skills-grid { grid-template-columns: 1fr; }
-  .orbit-items { grid-template-columns: repeat(2, 1fr); }
-  .skill-planet { padding: 12px 8px; }
+  .skill-col { padding: 16px; }
+  .planet-name { font-size: 10px; }
   .planet-icon { width: 44px; height: 44px; }
   .planet-icon i { font-size: 22px; }
-  .planet-name { font-size: 10px; }
 }
