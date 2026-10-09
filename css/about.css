@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #6ea8ff, #7ef6d7, #aa75ff);
+  background: linear-gradient(90deg, var(--gold), transparent 70%);
 }
 
 .about-card h2 {
@@ -89,7 +89,8 @@
   content: "";
   width: 4px;
   height: 20px;
-  background: linear-gradient(180deg, #6ea8ff, #7ef6d7);
+  background: var(--gold);
+  opacity: 0.7;
   border-radius: 2px;
 }
 

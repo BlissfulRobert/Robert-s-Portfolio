@@ -72,8 +72,8 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #6ea8ff, #7ef6d7, #aa75ff);
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent 70%);
 }
 
 /* ── Steam body: left text panel + right image + filmstrip ── */
@@ -119,8 +119,9 @@
   padding: 3px 10px;
   font-size: 10px;
   font-weight: 700;
-  color: #0c1424;
-  background: linear-gradient(135deg, #9ef0a8, #7ef6d7);
+  color: var(--text);
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(139,145,170,.4);
   border-radius: 999px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -128,18 +129,21 @@
 }
 
 .project-badge.in-dev {
-  background: linear-gradient(135deg, #e8c547, #d4a84b);
-  color: #2a2000;
+  background: rgba(232,199,132,.14);
+  border-color: rgba(232,199,132,.45);
+  color: var(--gold);
 }
 
 .project-badge.in-progress {
-  background: linear-gradient(135deg, #60a5fa, #3b82f6);
-  color: #ffffff;
+  background: rgba(232,199,132,.14);
+  border-color: rgba(232,199,132,.45);
+  color: var(--gold);
 }
 
 .project-badge.deployed {
-  background: linear-gradient(135deg, #34d399, #059669);
-  color: #fff;
+  background: rgba(110,200,150,.14);
+  border-color: rgba(110,200,150,.45);
+  color: #8fd9b0;
 }
 
 /* ── Divider below header ── */
@@ -237,7 +241,6 @@
 .proj-live-link:hover {
   background: rgba(52,211,153,.14);
   border-color: #34d399;
-  box-shadow: 0 0 16px rgba(52,211,153,.15);
 }
 
 .proj-live-link-text {

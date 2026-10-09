@@ -40,8 +40,9 @@
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
-  color: #0c1424;
-  background: linear-gradient(135deg, #6ea8ff, #7ef6d7);
+  color: #141a2f;
+  background: var(--gold);
+  box-shadow: 0 6px 20px var(--gold-soft);
   border: none;
   margin-top: 12px;
   transition: all 0.3s ease;
@@ -49,8 +50,8 @@
 }
 
 .cta-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(110,168,255,.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(232,199,132,.28);
 }
 
 .footer-divider {

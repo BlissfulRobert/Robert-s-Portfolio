@@ -21,13 +21,6 @@
 
 </head>
 <body>
-<div class="aurora">
-  <div class="aurora-line"></div>
-  <div class="aurora-line"></div>
-  <div class="aurora-line"></div>
-  <div class="aurora-line"></div>
-  <div class="aurora-line"></div>
-</div>
 
   <div class="nav">
     <div class="container inner">
@@ -53,15 +46,11 @@
     <section id="home" class="hero">
       <div class="hero-nebula" aria-hidden="true">
         <div class="nebula n1"></div>
-        <div class="nebula n2"></div>
-        <div class="nebula n3"></div>
-        <div class="nebula n4"></div>
-        <div class="nebula n5"></div>
       </div>
       <div class="hero-text">
         <p class="hero-greeting">Hi, I am</p>
         <h1 class="hero-name">Robert Taboada</h1>
-        <p class="hero-role">A <span class="hero-typing" id="heroTyping"></span><span class="hero-cursor">|</span></p>
+        <p class="hero-role">Full Stack Developer <span class="hero-sep">·</span> Game Developer <span class="hero-sep">·</span> UI/UX</p>
         <p class="hero-bio">A passionate Full Stack Developer specializing in game development, web applications, and mobile apps. I love creating intuitive user experiences and building projects that actually serves the user.</p>
         <div class="hero-kpis">
           <div class="hero-kpi">
@@ -110,7 +99,7 @@
       │  [img 1]  [img 2]  [img 3]  [img 4]                 │
       │  [tag] [tag] [tag]                                   │
       └──────────────────────────────────────────────────────┘
-      Two sections: Work Projects (5 cards), Other Projects (3 cards)
+      Two sections: Work Projects (6 cards), Other Projects (3 cards)
       Counter below each section: ‹ 1 / 5 ›
     -->
     <section id="projects" class="page-section">
@@ -120,8 +109,71 @@
       <h2 class="proj-section-label">Work Projects</h2>
       <div class="proj-section" id="workSection">
 
-        <!-- Card 1: Tulong Tulfo -->
+        <!-- Card 1: Bai Philippines -->
         <div class="project-showcase active">
+          <div class="project-header">
+            <h2 class="project-name">Bai Philippines</h2>
+            <span class="project-badge deployed">Deployed</span>
+          </div>
+          <div class="steam-body">
+            <div class="steam-info">
+              <p class="project-desc">A website for an Australian-managed offshore staffing company connecting Australian businesses with Filipino talent.</p>
+              <div class="proj-meta-row">
+                <span class="proj-meta-label">ROLE</span>
+                <span class="proj-meta-value">Full Stack Developer</span>
+              </div>
+              <div class="proj-features">
+                <span class="proj-meta-label">FEATURES</span>
+                <ul>
+                  <li>Service & Pricing Tiers</li>
+                  <li>How It Works Flow</li>
+                  <li>Click-to-Call Contact</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+              <a href="https://baiphilippines.com.au/" target="_blank" rel="noopener" class="proj-live-link">
+                <div class="proj-live-link-text">
+                  <span class="proj-live-link-label">View Live Site</span>
+                  <span class="proj-live-link-sub">baiphilippines.com.au</span>
+                </div>
+                <div class="proj-live-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+              </a>
+              <div class="project-tech">
+                <div class="project-tech-tags">
+                  <span class="tech-tag" data-tech="React"><i class="devicon-react-original"></i>React</span>
+                  <span class="tech-tag" data-tech="Vite"><i class="devicon-vitejs-plain"></i>Vite</span>
+                  <span class="tech-tag" data-tech="Tailwind CSS"><i class="devicon-tailwindcss-original"></i>Tailwind CSS</span>
+                  <span class="tech-tag" data-tech="Railway"><i class="devicon-railway-plain"></i>Railway</span>
+                </div>
+              </div>
+            </div>
+            <div class="steam-main-img">
+              <img src="images/Bai Philippines/BaiPHHero.png" alt="Homepage"/>
+              <span class="steam-main-caption">Homepage</span>
+            </div>
+            <div class="steam-thumbs">
+              <div class="steam-thumb active-thumb" data-src="images/Bai Philippines/BaiPHHero.png" data-label="Homepage">
+                <img src="images/Bai Philippines/BaiPHHero.png" alt="Homepage"/>
+                <span class="steam-thumb-label">Homepage</span>
+              </div>
+              <div class="steam-thumb" data-src="images/Bai Philippines/BaiPHInfo.png" data-label="How It Works">
+                <img src="images/Bai Philippines/BaiPHInfo.png" alt="How It Works"/>
+                <span class="steam-thumb-label">How It Works</span>
+              </div>
+              <div class="steam-thumb" data-src="images/Bai Philippines/BaiPHTier.png" data-label="Pricing Tiers">
+                <img src="images/Bai Philippines/BaiPHTier.png" alt="Pricing Tiers"/>
+                <span class="steam-thumb-label">Pricing Tiers</span>
+              </div>
+              <div class="steam-thumb" data-src="images/Bai Philippines/BaiPHCTA.png" data-label="Contact Modal">
+                <img src="images/Bai Philippines/BaiPHCTA.png" alt="Contact Modal"/>
+                <span class="steam-thumb-label">Contact Modal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Tulong Tulfo -->
+        <div class="project-showcase">
           <div class="project-header">
             <h2 class="project-name">Tulong Tulfo</h2>
             <span class="project-badge in-progress">In Progress</span>
@@ -176,7 +228,7 @@
           </div>
         </div>
 
-        <!-- Card 2: PCCI Website -->
+        <!-- Card 3: PCCI Website -->
         <div class="project-showcase">
           <div class="project-header">
             <h2 class="project-name">PCCI Website</h2>
@@ -238,7 +290,7 @@
           </div>
         </div>
 
-        <!-- Card 3: Bai Remittance -->
+        <!-- Card 4: Bai Remittance -->
         <div class="project-showcase">
           <div class="project-header">
             <h2 class="project-name">Bai Remittance</h2>
@@ -294,7 +346,7 @@
           </div>
         </div>
 
-        <!-- Card 4: Bai Finance Website -->
+        <!-- Card 5: Bai Finance Website -->
         <div class="project-showcase">
           <div class="project-header">
             <h2 class="project-name">Bai Finance Website</h2>
@@ -356,7 +408,7 @@
           </div>
         </div>
 
-        <!-- Card 5: Bai HR -->
+        <!-- Card 6: Bai HR -->
         <div class="project-showcase">
           <div class="project-header">
             <h2 class="project-name">Bai HR</h2>
@@ -378,6 +430,13 @@
                   <li>Full Audit Trail</li>
                 </ul>
               </div>
+              <a href="https://www.myteambai.com/" target="_blank" rel="noopener" class="proj-live-link">
+                <div class="proj-live-link-text">
+                  <span class="proj-live-link-label">View Live Site</span>
+                  <span class="proj-live-link-sub">myteambai.com</span>
+                </div>
+                <div class="proj-live-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+              </a>
               <div class="project-tech">
                 <div class="project-tech-tags">
                   <span class="tech-tag" data-tech="Next.js 15"><i class="devicon-nextjs-plain"></i>Next.js 15</span>
@@ -415,7 +474,7 @@
         <!-- Work Projects counter -->
         <div class="proj-section-nav">
           <button class="proj-btn" id="workPrev" aria-label="Previous">&#8249;</button>
-          <span class="proj-counter"><span class="proj-current" id="workCurrent">1</span> / <span id="workTotal">5</span></span>
+          <span class="proj-counter"><span class="proj-current" id="workCurrent">1</span> / <span id="workTotal">6</span></span>
           <button class="proj-btn" id="workNext" aria-label="Next">&#8250;</button>
         </div>
       </div><!-- /#workSection -->
@@ -752,7 +811,7 @@
         <!-- Card 2: Frameworks & Libraries -->
         <div class="skill-card">
           <div class="skill-card-header">
-            <span class="skill-card-dot" style="background:#aa75ff;box-shadow:0 0 8px #aa75ff;"></span>
+            <span class="skill-card-dot"></span>
             Frameworks &amp; Libraries
           </div>
           <div class="skill-card-items">
@@ -792,7 +851,7 @@
         <!-- Card 3: Databases -->
         <div class="skill-card">
           <div class="skill-card-header">
-            <span class="skill-card-dot" style="background:#9ef0a8;box-shadow:0 0 8px #9ef0a8;"></span>
+            <span class="skill-card-dot"></span>
             Databases
           </div>
           <div class="skill-card-items">
@@ -826,7 +885,7 @@
         <!-- Card 4: Dev Tools & Workflow -->
         <div class="skill-card">
           <div class="skill-card-header">
-            <span class="skill-card-dot" style="background:#ffb464;box-shadow:0 0 8px #ffb464;"></span>
+            <span class="skill-card-dot"></span>
             Dev Tools &amp; Workflow
           </div>
           <div class="skill-card-items">
@@ -854,7 +913,7 @@
         <!-- Card 5: Cloud & DevOps -->
         <div class="skill-card">
           <div class="skill-card-header">
-            <span class="skill-card-dot" style="background:#c084fc;box-shadow:0 0 8px #c084fc;"></span>
+            <span class="skill-card-dot"></span>
             Cloud &amp; DevOps
           </div>
           <div class="skill-card-items">
@@ -882,7 +941,7 @@
         <!-- Card 6: Other Technical Skills -->
         <div class="skill-card">
           <div class="skill-card-header">
-            <span class="skill-card-dot" style="background:#64dcdc;box-shadow:0 0 8px #64dcdc;"></span>
+            <span class="skill-card-dot"></span>
             Other Technical Skills
           </div>
           <div class="skill-card-items">
@@ -893,14 +952,14 @@
               <span class="skill-label">UX Design</span>
             </div>
             <div class="skill-item">
-              <div class="skill-icon" style="background:rgba(126,246,215,.15);border-color:rgba(126,246,215,.3);">
-                <i class="fa-solid fa-shield-halved" style="color:#7ef6d7;font-size:20px;"></i>
+              <div class="skill-icon" style="background:rgba(143,180,255,.12);border-color:rgba(143,180,255,.28);">
+                <i class="fa-solid fa-shield-halved" style="color:#8fb4ff;font-size:20px;"></i>
               </div>
               <span class="skill-label">API Security</span>
             </div>
             <div class="skill-item">
-              <div class="skill-icon" style="background:rgba(126,246,215,.15);border-color:rgba(126,246,215,.3);">
-                <i class="fa-solid fa-code" style="color:#7ef6d7;font-size:20px;"></i>
+              <div class="skill-icon" style="background:rgba(143,180,255,.12);border-color:rgba(143,180,255,.28);">
+                <i class="fa-solid fa-code" style="color:#8fb4ff;font-size:20px;"></i>
               </div>
               <span class="skill-label">Regex</span>
             </div>
@@ -914,28 +973,28 @@
         <h2 class="section-title" style="margin-top:0">Soft Skills</h2>
         <div class="soft-skills-grid">
           <div class="soft-skill-item">
-            <div class="soft-skill-icon">++</div>
+            <div class="soft-skill-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
             <div class="soft-skill-text">
               <h4>Adaptable</h4>
               <p>Quick learner, flexible with new technologies</p>
             </div>
           </div>
           <div class="soft-skill-item">
-            <div class="soft-skill-icon">&lt;&gt;</div>
+            <div class="soft-skill-icon"><i class="fa-solid fa-people-group"></i></div>
             <div class="soft-skill-text">
               <h4>Collaborative</h4>
               <p>Team player who thrives in group environments</p>
             </div>
           </div>
           <div class="soft-skill-item">
-            <div class="soft-skill-icon">?!</div>
+            <div class="soft-skill-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
             <div class="soft-skill-text">
               <h4>Inquisitive</h4>
               <p>Curious mindset, always eager to learn more</p>
             </div>
           </div>
           <div class="soft-skill-item">
-            <div class="soft-skill-icon">&hearts;</div>
+            <div class="soft-skill-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
             <div class="soft-skill-text">
               <h4>Empathy</h4>
               <p>Understanding user needs and team perspectives</p>
@@ -991,50 +1050,59 @@
 <script src="js/model-viewer.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/carousel.js"></script>
-<script>
-(function(){
-  const roles = ["Full Stack Developer", "Game Developer", "UI/UX Designer"];
-  let ri = 0, ci = 0, deleting = false;
-  const el = document.getElementById("heroTyping");
-  function tick() {
-    const word = roles[ri];
-    el.textContent = deleting ? word.slice(0, ci--) : word.slice(0, ci++);
-    let delay = deleting ? 60 : 100;
-    if (!deleting && ci > word.length) { delay = 1800; deleting = true; }
-    else if (deleting && ci < 0) { deleting = false; ri = (ri + 1) % roles.length; ci = 0; delay = 400; }
-    setTimeout(tick, delay);
-  }
-  tick();
-})();
-</script>
 
 <canvas id="fallingStars"></canvas>
-<div class="twinkle-stars">
-  <!-- Left side stars -->
-  <span style="top:10%; left:3%; animation-delay:0s"></span>
-  <span style="top:30%; left:5%; animation-delay:1s"></span>
-  <span style="top:70%; left:2%; animation-delay:2s"></span>
-  <span style="top:50%; left:6%; animation-delay:3.5s"></span>
-  <span style="top:85%; left:4%; animation-delay:4.2s"></span>
-
-  <!-- Right side stars -->
-  <span style="top:15%; right:3%; animation-delay:0.5s"></span>
-  <span style="top:45%; right:5%; animation-delay:1.5s"></span>
-  <span style="top:80%; right:2%; animation-delay:2.5s"></span>
-  <span style="top:25%; right:6%; animation-delay:3s"></span>
-  <span style="top:65%; right:4%; animation-delay:4s"></span>
-
-  <!-- Middle stars -->
-  <span style="top:20%; left:25%; animation-delay:0.8s"></span>
-  <span style="top:40%; left:35%; animation-delay:2.2s"></span>
-  <span style="top:60%; left:45%; animation-delay:1.3s"></span>
-  <span style="top:35%; left:55%; animation-delay:3.1s"></span>
-  <span style="top:75%; left:30%; animation-delay:0.3s"></span>
-  <span style="top:15%; left:60%; animation-delay:2.8s"></span>
-  <span style="top:55%; left:70%; animation-delay:1.7s"></span>
-  <span style="top:85%; left:50%; animation-delay:4.5s"></span>
-  <span style="top:25%; left:40%; animation-delay:3.8s"></span>
-  <span style="top:70%; left:65%; animation-delay:0.6s"></span>
+<div class="twinkle-stars" aria-hidden="true">
+  <span style="top:2.0%; left:90.4%; animation-delay:2.3s"></span>
+  <span style="top:22.2%; left:72.0%; animation-delay:4.3s"></span>
+  <span style="top:33.6%; left:74.2%; animation-delay:6.0s"></span>
+  <span style="top:54.1%; left:67.7%; animation-delay:5.1s"></span>
+  <span style="top:80.4%; left:25.2%; animation-delay:3.0s"></span>
+  <span style="top:70.0%; left:69.0%; animation-delay:0.4s"></span>
+  <span style="top:67.7%; left:46.9%; animation-delay:7.4s"></span>
+  <span style="top:79.5%; left:13.8%; animation-delay:4.1s"></span>
+  <span style="top:90.6%; left:68.1%; animation-delay:5.2s"></span>
+  <span style="top:57.4%; left:89.6%; animation-delay:7.3s"></span>
+  <span style="top:37.7%; left:34.2%; animation-delay:6.7s"></span>
+  <span style="top:33.9%; left:16.6%; animation-delay:2.4s"></span>
+  <span style="top:43.1%; left:30.3%; animation-delay:7.5s"></span>
+  <span style="top:55.5%; left:72.0%; animation-delay:7.0s"></span>
+  <span style="top:7.6%; left:28.3%; animation-delay:4.5s"></span>
+  <span style="top:50.8%; left:42.5%; animation-delay:1.5s"></span>
+  <span style="top:89.3%; left:7.3%; animation-delay:2.9s"></span>
+  <span style="top:35.0%; left:65.8%; animation-delay:7.4s"></span>
+  <span style="top:51.4%; left:17.9%; animation-delay:3.2s"></span>
+  <span style="top:29.2%; left:37.0%; animation-delay:3.4s"></span>
+  <span style="top:33.9%; left:53.0%; animation-delay:4.9s"></span>
+  <span style="top:24.4%; left:89.0%; animation-delay:3.7s"></span>
+  <span style="top:84.8%; left:63.0%; animation-delay:5.1s"></span>
+  <span style="top:51.6%; left:50.5%; animation-delay:5.5s"></span>
+  <span style="top:92.2%; left:40.1%; animation-delay:5.7s"></span>
+  <span style="top:26.1%; left:58.3%; animation-delay:2.8s"></span>
+  <span style="top:33.7%; left:39.6%; animation-delay:6.4s"></span>
+  <span style="top:86.2%; left:12.7%; animation-delay:6.6s"></span>
+  <span style="top:9.5%; left:41.1%; animation-delay:1.2s"></span>
+  <span style="top:9.5%; left:97.6%; animation-delay:1.8s"></span>
+  <span style="top:62.7%; left:15.8%; animation-delay:3.7s"></span>
+  <span style="top:58.9%; left:15.2%; animation-delay:7.4s"></span>
+  <span style="top:86.9%; left:87.5%; animation-delay:7.1s"></span>
+  <span style="top:89.1%; left:75.1%; animation-delay:2.2s"></span>
+  <span style="top:3.0%; left:25.8%; animation-delay:0.6s"></span>
+  <span style="top:2.2%; left:61.2%; animation-delay:1.9s"></span>
+  <span style="top:73.2%; left:49.0%; animation-delay:5.5s"></span>
+  <span style="top:24.9%; left:86.7%; animation-delay:1.9s"></span>
+  <span style="top:37.9%; left:87.9%; animation-delay:0.9s"></span>
+  <span style="top:49.0%; left:2.3%; animation-delay:7.3s"></span>
+  <span style="top:63.1%; left:90.5%; animation-delay:0.2s"></span>
+  <span style="top:88.4%; left:20.1%; animation-delay:7.7s"></span>
+  <span style="top:56.3%; left:67.2%; animation-delay:2.1s"></span>
+  <span style="top:23.4%; left:22.1%; animation-delay:4.5s"></span>
+  <span style="top:7.0%; left:75.9%; animation-delay:5.6s"></span>
+  <span style="top:70.6%; left:49.8%; animation-delay:0.3s"></span>
+  <span style="top:12.6%; left:90.2%; animation-delay:1.0s"></span>
+  <span style="top:68.0%; left:87.7%; animation-delay:0.3s"></span>
+  <span style="top:86.8%; left:84.7%; animation-delay:7.9s"></span>
+  <span style="top:93.6%; left:75.4%; animation-delay:3.4s"></span>
 </div>
 
 </body>

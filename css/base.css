@@ -1,13 +1,15 @@
 
 :root{
-  --bg:#0f1220;
-  --card:#151a2e;
+  --bg:#0b1020;
+  --card:#141a2f;
   --muted:#8b91aa;
-  --text:#e6e9ff;
-  --accent:#6ea8ff;
+  --text:#e8eaf6;
+  --accent:#8fb4ff;
+  --gold:#e8c784;
+  --gold-soft:rgba(232,199,132,.18);
   --accent-2:#9ef0a8;
   --brand:#b5ff75;
-  --ring:rgba(110,168,255,.35);
+  --ring:rgba(143,180,255,.35);
 }
 
 *{box-sizing:border-box;scrollbar-width:none;}
@@ -19,7 +21,7 @@ html::-webkit-scrollbar{display:none;width:0;height:0;}
 body{scrollbar-width:none;-ms-overflow-style:none;}
 body::-webkit-scrollbar{display:none;width:0;height:0;}
 html,body{margin:0;padding:0;overflow-x:hidden;color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
-body{background:linear-gradient(180deg,#0b0e1a 0%, #101632 50%, #0b0e1a 100%);background-attachment:fixed}
+body{background:radial-gradient(120% 60% at 50% 0%,rgba(90,120,220,.10) 0%,transparent 60%),linear-gradient(180deg,#090c18 0%, #0e1430 50%, #090c18 100%);background-color:#090c18;background-attachment:fixed}
 
 .page-section{
   padding-top:40px;
@@ -42,8 +44,8 @@ body{background:linear-gradient(180deg,#0b0e1a 0%, #101632 50%, #0b0e1a 100%);ba
 
 .section-title{margin:32px 0 16px;font-weight:800;font-size:20px;letter-spacing:.3px}
 
-.button{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#6ea8ff,#7ef6d7);color:#0c1424;font-weight:700;padding:12px 18px;border-radius:12px;border:none;cursor:pointer;text-decoration:none;box-shadow:0 6px 24px rgba(110,168,255,.25);transition:all 0.3s ease;transform:translateY(0)}
-.button:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(110,168,255,.4)}
+.button{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#141a2f;font-weight:700;padding:12px 18px;border-radius:12px;border:none;cursor:pointer;text-decoration:none;box-shadow:0 6px 20px var(--gold-soft);transition:all 0.3s ease;transform:translateY(0)}
+.button:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(232,199,132,.28)}
 .button:active{transform:translateY(-2px)}
 .button.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.12)}
 .button.secondary:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25);box-shadow:0 8px 24px rgba(0,0,0,.3)}
